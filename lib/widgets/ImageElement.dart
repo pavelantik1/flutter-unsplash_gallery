@@ -13,9 +13,11 @@ class ImageElement extends StatelessWidget {
     return Card(
         elevation: 5,
         child: Row(children: <Widget>[
-          Hero(
-              tag: "image-el",
-              child: Image(image: NetworkImage(imageEl[index].imgUrlSmall))),
+          //Hero(
+          //tag: "image-el",
+          // child:
+          Image(image: NetworkImage(imageEl[index].imgUrlSmall)),
+          //),
           Container(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,

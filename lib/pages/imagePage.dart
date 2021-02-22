@@ -73,13 +73,15 @@ class _ImagePageState extends State<ImagePage> {
                 Navigator.of(context).pop(context);
               },
               onDoubleTap: _doublTap,
-              child: Hero(
-                tag: "image-el",
-                child: Image(
-                  image: NetworkImage(widget.imageUrl),
-                  fit: _isFullscreen ? BoxFit.cover : BoxFit.contain,
-                ),
+              child:
+                  // Hero(
+                  // tag: "image-el",
+                  // child:
+                  Image(
+                image: NetworkImage(widget.imageUrl),
+                fit: _isFullscreen ? BoxFit.cover : BoxFit.contain,
               ),
+              //),
             ),
           ),
         ),
